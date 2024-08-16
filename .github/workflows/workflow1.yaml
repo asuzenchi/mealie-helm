@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  helm-lint-template:
-    name: 'Validate'
+  helm-lint:
+    name: 'Helm Lint'
     runs-on: ubuntu-latest
 
     steps:
@@ -26,4 +26,4 @@ jobs:
       run: helm lint --strict #./path/to/your/chart 
 
     - name: Run Helm Template
-      run: helm template . #./path/to/your/chart
+      run: helm template . # Replace with the path to your chart
