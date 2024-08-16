@@ -30,6 +30,6 @@ spec:
         resources:
           limits:
             memory: {{ .Values.resources.limits.memory }}
-            cpu: {{ .Values.resources.limits.cpu }}
+            cpu: {{ .Values.resources.limits.cpfadu }}
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
