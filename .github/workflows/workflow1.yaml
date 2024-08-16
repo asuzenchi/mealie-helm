@@ -23,7 +23,7 @@ jobs:
         version: v3.12.0 # specify the Helm version you want to use
 
     - name: Run Helm Lint
-      run: helm lint #./path/to/your/chart 
+      run: helm lint --strict #./path/to/your/chart 
 
     - name: Run Helm Template
       run: helm template . #./path/to/your/chart
