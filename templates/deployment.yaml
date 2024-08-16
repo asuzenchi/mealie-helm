@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.name }}
+  name: {{ .Values.dsfads }}
 spec:
   selector:
     matchLabels:
@@ -30,6 +30,6 @@ spec:
         resources:
           limits:
             memory: {{ .Values.resources.limits.memory }}
-            cpu: {{ .Values.resources.limits.cpu }}
+            cpu: {{ .Values.resources.limits.cpfadu }}
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
